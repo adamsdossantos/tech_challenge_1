@@ -87,7 +87,7 @@ Para configurar o projeto localmente, siga os passos abaixo:
 
 ## 5. Arquitetura
 
-![arquitetura](diagram.svg)
+![arquitetura](diagram.png)
 
 ## 6. Diretrizes para Contribuição
 
