@@ -31,8 +31,10 @@ Para configurar o projeto localmente, siga os passos abaixo:
    uvicorn app.main:app --reload
 
 5. Acesse a documentação do API em:
-   http://127.0.0.1:8000/docs para o Swagger UI\\
-   http://127.0.0.1:8000/redoc para o ReDoc
+
+   - http://127.0.0.1:8000/docs para o Swagger UI
+
+   - http://127.0.0.1:8000/redoc para o ReDoc
 
 ## 3. Guia de Uso
 
@@ -64,7 +66,8 @@ Para configurar o projeto localmente, siga os passos abaixo:
    -H 'Authorization: Bearer SEU_TOKEN_DE_ACESSO'
 
 - Obter dados de processamento:
-   ```bashcurl -X 'GET' \\
+   ```bash
+   curl -X 'GET' \\
    'http://127.0.0.1:8000/processamento?limit=10&skip=0&search=viniferas' \\
    -H 'Authorization: Bearer SEU_TOKEN_DE_ACESSO'
 
@@ -85,11 +88,20 @@ Para configurar o projeto localmente, siga os passos abaixo:
    - ACCESS_TOKEN_EXPIRE_MINUTES (em oauth2.py): Altere a duração (em minutos) para definir quanto tempo o token JWT deve ser válido.
    - Banco de Dados: Modifique fake_users_db em oauth2.py para adicionar ou alterar usuários de teste.
 
+
 ## 5. Arquitetura
 
 ![arquitetura](diagram.png)
 
-## 6. Diretrizes para Contribuição
+## 6. Acesso ao Deploy Público
+
+https://tech-challenge-6zhc.onrender.com/docs
+
+## Vídeo Explicativo do Funcionamento da API
+
+https://www.youtube.com
+
+## 7. Diretrizes para Contribuição
 
 - Contribuições são bem-vindas! Para contribuir:
 
@@ -116,7 +128,7 @@ Para configurar o projeto localmente, siga os passos abaixo:
    Siga PEP 8 para o código Python.
    Certifique-se de que seu código passa por todos os testes antes de enviar um pull request.
 
-## 7. Licença
+## 8. Licença
 
 - Este projeto é licenciado sob a Licença MIT - veja o arquivo LICENSE para mais detalhes.
 
