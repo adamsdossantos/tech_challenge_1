@@ -14,7 +14,7 @@ Para configurar o projeto localmente, siga os passos abaixo:
 ### Instalação
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/vitibrasil-api.git
+   git clone https://github.com/adamsdossantos/tech_challenge_1
    cd app
 
 2. Crie e ative um ambiente virtual:
@@ -31,12 +31,12 @@ Para configurar o projeto localmente, siga os passos abaixo:
    uvicorn app.main:app --reload
 
 5. Acesse a documentação do API em:
-   http://127.0.0.1:8000/docs para o Swagger UI
+   http://127.0.0.1:8000/docs para o Swagger UI\\
    http://127.0.0.1:8000/redoc para o ReDoc
 
-### 3. Guia de Uso
+## 3. Guia de Uso
 
-#### Autenticação
+### Autenticação
 
 - Obtenha um token JWT enviando uma requisição POST para /login/ com um nome de usuário e senha válidos:
 
@@ -78,27 +78,35 @@ Para configurar o projeto localmente, siga os passos abaixo:
 - /login - Autentica o usuário e fornece um token JWT
 - /users/me - Recupera detalhes do usuário autenticado
 
-### 4. Configuração
+## 4. Configuração
 
 - As seguintes configurações podem ser ajustadas conforme necessário:
-   SECRET_KEY (em oauth2.py): Atualize este valor para uma geração de token mais segura.
-   ACCESS_TOKEN_EXPIRE_MINUTES (em oauth2.py): Altere a duração (em minutos) para definir quanto tempo o token JWT deve ser válido.
-   Banco de Dados: Modifique fake_users_db em oauth2.py para adicionar ou alterar usuários de teste.
+   - SECRET_KEY (em oauth2.py): Atualize este valor para uma geração de token mais segura.
+   - ACCESS_TOKEN_EXPIRE_MINUTES (em oauth2.py): Altere a duração (em minutos) para definir quanto tempo o token JWT deve ser válido.
+   - Banco de Dados: Modifique fake_users_db em oauth2.py para adicionar ou alterar usuários de teste.
 
-### 5. Diretrizes para Contribuição
+## 5. Arquitetura
+
+![arquitetura](diagram.svg)
+
+## 6. Diretrizes para Contribuição
 
 - Contribuições são bem-vindas! Para contribuir:
 
    1. Faça um fork do repositório.
+
    2. Crie uma nova branch
       ```bash
       git checkout -b feature/nome-da-sua-feature
+
    3. Faça as suas alterações e commit:
       ```bash
       git commit -m "Adiciona nova funcionalidade"
+
    4. Envie as suas alterações para a branch:
       ```bash
       git push origin feature/nome-da-sua-feature
+
    5. Crie um pull request no GitHub
 
 - Reportando Problemas
@@ -108,7 +116,7 @@ Para configurar o projeto localmente, siga os passos abaixo:
    Siga PEP 8 para o código Python.
    Certifique-se de que seu código passa por todos os testes antes de enviar um pull request.
 
-### 6. Licença
+## 7. Licença
 
 - Este projeto é licenciado sob a Licença MIT - veja o arquivo LICENSE para mais detalhes.
 
